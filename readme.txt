@@ -20,8 +20,6 @@ Features:
 - Support multi Wordpress Version.
 - Allows Displaying the controling buttons (next, previous) in horizontal or vertical direction
 - Allows displaying the list of post from category.
-- Allows flexibe displaying content of each item in 3 options: thumbnail , Mixed, Or Introtext: (is text above the readmore tag)
-- Supports cropping, resizing thumbnail.
 - Customize User CSS formatting.
 - Lightweight, modern and fast-loading design.
 - W3C XHTML 1.0 Transitional. W3C CSS Valid.
