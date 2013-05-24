@@ -27,8 +27,7 @@ Features:
 - Fully compatible IE7+, Firefox 2+, Flock 0.7+, Netscape, Safari, Opera 9.5
 - Literally unlimited transitions
 - Animated Layers
-- Easy installation
-- More than 40 preset transitions 
+- Easy installation 
 
 Useful links:
 
