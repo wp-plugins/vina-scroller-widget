@@ -19,7 +19,12 @@ Features:
 - Get title, image, description from post item.
 - Support multi Wordpress Version.
 - Allows Displaying the controling buttons (next, previous) in horizontal or vertical direction
+- Free 2 skin: While Theme and Black Theme.
+- Allows adjustment number of the post to display.
 - Allows displaying the list of post from category.
+- Allows adjustment duration time, touch, mouse, hover effect.
+- Allows show/hide title, description, image, readmore button ...
+- Allows odering post to display.
 - Customize User CSS formatting.
 - Lightweight, modern and fast-loading design.
 - W3C XHTML 1.0 Transitional. W3C CSS Valid.
