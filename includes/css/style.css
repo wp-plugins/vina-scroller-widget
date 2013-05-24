@@ -1,0 +1,216 @@
+/*
+Plugin Name: Vina Scroller Widget
+Plugin URI: http://VinaThemes.biz
+Description: This is a highly customizable plugin to show you or your customer's services, portfolio items, blog contents ... basically all business information thinkable.
+Version: 1.0
+Author: VinaThemes
+Author URI: http://VinaThemes.biz
+Author email: mr_hiennc@yahoo.com
+Demo URI: http://VinaDemo.biz
+Forum URI: http://laptrinhvien-vn.com
+License: GPLv3+
+*/
+
+#vina-scroller-widget {
+	position: relative;
+}
+
+#vina-scroller-widget.theme1 .main-container {
+	background-color:#fff;
+	border:1px solid #e6e6e6;
+	padding:30px;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(100,100,100,0.1);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(100,100,100,0.1);
+	box-shadow: 0px 0px 5px 1px rgba(100,100,100,0.1);
+}
+#vina-scroller-widget.theme1 {
+	font-family: Arial, sans-serif;
+	font-size:12px;
+	line-height: 20px;
+	color: #777;
+	text-shadow: #fff 1px 1px 1px;
+}
+
+#vina-scroller-widget.theme1 h2 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #999;
+	text-shadow: #fff 1px 1px 1px;	
+	margin: 0px;
+	width: 100%;
+}
+
+#vina-scroller-widget.theme1 .thumb {
+	height:auto;
+	background:#fff;
+	position:relative;
+	z-index:50;
+}
+
+#vina-scroller-widget.theme2 .main-container {
+	background-color:#222;
+	border:1px solid #1e1e1e;
+	padding:20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#vina-scroller-widget.theme2 {
+	font-family: Arial, sans-serif;
+	font-size:12px;
+	line-height: 20px;
+	color: #999;
+	text-shadow: #000 1px 1px 1px;
+}
+#vina-scroller-widget.theme2 h2 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	color: #ddd;
+	text-shadow: #000 1px 1px 1px;	
+	margin: 0px;
+	width: 100%;
+}
+#vina-scroller-widget.theme2 .thumb {
+	padding:0px;
+	height:auto;
+	background:#fff;
+	position:relative;
+	z-index:50;
+}
+
+
+#vina-scroller-widget .buttonlight {
+	margin-top:10px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#vina-scroller-widget .buttonlight:link, 
+#vina-scroller-widget .buttonlight:visited {
+	color: #777;
+	padding: 5px 20px 5px 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0px #fff;
+	background: #999 url('../images/btn-light.png') repeat-x center top;
+	border: 1px solid #cdcdcd;
+	text-decoration: none;
+	font-weight: bold;
+}
+#vina-scroller-widget .buttonlight:hover {
+	color: #fff;
+	text-shadow: 1px 1px 0px #000;
+	background: #333;
+	border: 1px solid #555555;
+	text-decoration: none;
+}
+#vina-scroller-widget .buttondark {
+	margin-top:10px;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#vina-scroller-widget .buttondark:link, 
+#vina-scroller-widget .buttondark:visited {
+	color: #fff;
+	padding: 0 20px 0 20px;
+	text-align: center;
+	text-shadow: 1px 1px 0px #000;
+	background: #999 url('../images/btn-dark.png') repeat-x center top;
+	border: 1px solid #151515;
+	text-decoration: none;
+	font-weight: bold;
+}
+#vina-scroller-widget .buttondark:hover {
+	color: #fff;
+	text-shadow: 1px 1px 0px #000;
+	background: #333;
+	border: 1px solid #555555;
+	text-decoration: none;
+}
+#vina-scroller-widget .toolbar {
+	visibility:hidden;
+}
+#vina-scroller-widget .toolbar .left {
+	background:url(../images/left.png) no-repeat top;
+	width:30px;
+	height:45px;
+	position:absolute;
+	left:0px;
+	top:60px;
+	z-index:100;
+	margin-left:-29px;
+	cursor:pointer;
+}
+#vina-scroller-widget.theme2 .toolbar .left{
+	background:url(../images/left-dark.png) no-repeat top;
+	width:30px;
+	height:45px;
+	position:absolute;
+	left:0px;
+	top:60px;
+	z-index:100;
+	margin-left:-29px;
+	cursor:pointer;
+}
+#vina-scroller-widget .toolbar .left:hover {
+	background-position:bottom;
+}
+#vina-scroller-widget .toolbar .right {
+	background:url(../images/right.png) no-repeat top;
+	width:30px;
+	height:45px;
+	position:absolute;
+	right:0px;
+	top:60px;
+	z-index:100;	
+	margin-right:-30px;
+	cursor:pointer;
+}
+#vina-scroller-widget.theme2 .toolbar .right {
+	background:url(../images/right-dark.png) no-repeat top;
+	width:30px;
+	height:45px;
+	position:absolute;
+	right:0px;
+	top:60px;
+	z-index:100;	
+	margin-right:-30px;
+	cursor:pointer;
+}
+#vina-scroller-widget .toolbar .right:hover{
+	background-position:bottom;
+}
+#vina-scroller-widget .services-preloader {
+	background:url(../images/preloader.gif) no-repeat;
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:49%;
+	top:49%;
+	z-index:9999;
+}
+#vina-scroller-widget .hover-more-sign{
+	background:url('../images/more.png') no-repeat;
+	width:50px;
+	height:50px;	
+	position:absolute;
+	margin-left:-25px;
+	margin-top:-25px;
+	cursor:pointer;
+}
+div#tcvn-copyright {
+	font-size: 12px;
+    height: 0;
+    overflow: hidden;
+}
