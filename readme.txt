@@ -12,7 +12,7 @@ This is a highly customizable plugin to show you or your customer's services, po
 
 == Description ==
 
-The Vina Scroller Widget for WordPress is a good choice for showing serial content to bring more efficiency transferring information to readers. This is a highly customizable plugin to show you or your customer’s services, portfolio items, blog contents … basically all business information thinkable.
+The Vina Scroller Widget for WordPress is a good choice for showing serial content to bring more efficiency transferring information to readers. This is a highly customizable plugin to show you or your customer's services, portfolio items, blog contents ... basically all business information thinkable.
 
 Features:
 
