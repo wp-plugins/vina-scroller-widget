@@ -117,7 +117,7 @@ class Scroller_Widget extends WP_Widget
                 	<p><?php echo eTextField($this, 'width', 'Module Width', $width); ?></p>
                     <p><?php echo eTextField($this, 'height', 'Module Height', $height); ?></p>
                     <p><?php echo eSelectOption($this, 'moduleStyle', 'Module Style', 
-						array('theme1'=>'White Theme', 'theme2'=>'Black Theme'), $touchEnabled); ?></p>
+						array('theme1'=>'White Theme', 'theme2'=>'Black Theme'), $moduleStyle); ?></p>
                     <p><?php echo eTextField($this, 'slideAmount', 'Slide Amount', $slideAmount); ?></p>
                     <p><?php echo eTextField($this, 'slideSpacing', 'Slide Spacing', $slideSpacing); ?></p>
                     <p><?php echo eSelectOption($this, 'touchEnabled', 'Touch Enabled', 
