@@ -241,7 +241,7 @@ class Scroller_Widget extends WP_Widget
 					$altText 		= get_post_meta($thumbnailId , '_wp_attachment_image_alt', true);
 					$commentsNum 	= get_comments_number($post->ID);
 					
-					$image 	= VINA_PRESENTATION_URI . '/includes/timthumb.php?w='.$imageWidth.'&h='.$imageHeight.'&a=c&q=99&z=0&src=';
+					$image 	= VINA_SCROLLER_URI . '/includes/timthumb.php?w='.$imageWidth.'&h='.$imageHeight.'&a=c&q=99&z=0&src=';
 					$text   = explode('<!--more-->', $post->post_content);
 					$sumary = $text[0];
 				?>
