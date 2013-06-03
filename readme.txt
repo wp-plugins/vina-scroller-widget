@@ -18,6 +18,7 @@ Features:
 
 - Get title, image, description from post item.
 - Support multi Wordpress Version.
+- Load image from Featured Images.
 - Allows Displaying the controling buttons (next, previous) in horizontal or vertical direction
 - Free 2 skin: While Theme and Black Theme.
 - Allows adjustment number of the post to display.

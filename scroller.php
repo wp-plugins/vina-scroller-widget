@@ -64,6 +64,8 @@ class Scroller_Widget extends WP_Widget
 				'showTitle'		=> 'yes',
 				'linkTitle'		=> 'no',
 				'thumbImage'	=> 'yes',
+				'imageWidth'	=> '258',
+				'imageHeight'	=> '130',
 				'linkImage'		=> 'yes',
 				'readmore'		=> 'yes',
 			)
@@ -89,6 +91,8 @@ class Scroller_Widget extends WP_Widget
 		$showTitle		= esc_attr($instance['showTitle']);
 		$linkTitle		= esc_attr($instance['linkTitle']);
 		$thumbImage		= esc_attr($instance['thumbImage']);
+		$imageWidth		= esc_attr($instance['imageWidth']);
+		$imageHeight	= esc_attr($instance['imageHeight']);
 		$linkImage		= esc_attr($instance['linkImage']);
 		$readmore		= esc_attr($instance['readmore']);
 		?>
@@ -138,6 +142,8 @@ class Scroller_Widget extends WP_Widget
 						array('yes'=>'Yes', 'no'=>'No'), $linkTitle); ?></p>
                     <p><?php echo eSelectOption($this, 'thumbImage', 'Thumbnail Image', 
 						array('yes'=>'Show thumbnail image', 'no'=>'Hide thumbnail image'), $thumbImage); ?></p>
+                    <p><?php echo eTextField($this, 'imageWidth', 'Image Width (px)', $imageWidth); ?></p>
+                    <p><?php echo eTextField($this, 'imageHeight', 'Image Height (px)', $imageHeight); ?></p>
                     <p><?php echo eSelectOption($this, 'linkImage', 'Link on Image', 
 						array('yes'=>'Yes', 'no'=>'No'), $linkImage); ?></p>
                     <p><?php echo eSelectOption($this, 'readmore', 'Readmore', 
@@ -192,6 +198,8 @@ class Scroller_Widget extends WP_Widget
 		$showTitle		= getConfigValue($instance, 'showTitle',	'yes');
 		$linkTitle		= getConfigValue($instance, 'linkTitle',	'yes');
 		$thumbImage		= getConfigValue($instance, 'thumbImage',	'yes');
+		$imageWidth		= getConfigValue($instance, 'imageWidth',	'258');
+		$imageHeight	= getConfigValue($instance, 'imageHeight',	'130');
 		$linkImage		= getConfigValue($instance, 'linkImage',	'yes');
 		$readmore		= getConfigValue($instance, 'readmore',		'yes');
 		
@@ -232,15 +240,19 @@ class Scroller_Widget extends WP_Widget
 					$thumbnail 		= wp_get_attachment_image_src($thumbnailId , '70x45');	
 					$altText 		= get_post_meta($thumbnailId , '_wp_attachment_image_alt', true);
 					$commentsNum 	= get_comments_number($post->ID);
+					
+					$image 	= VINA_PRESENTATION_URI . '/includes/timthumb.php?w='.$imageWidth.'&h='.$imageHeight.'&a=c&q=99&z=0&src=';
+					$text   = explode('<!--more-->', $post->post_content);
+					$sumary = $text[0];
 				?>
                 <li>
                     <?php if(!empty($thumbnail) && $thumbImage == 'yes') : ?>
                     	<?php if($linkImage == 'yes') { ?>
                         <a href="<?php echo get_permalink($post->ID); ?>" title="<?php echo $post->post_title; ?>">
-                        	<?php echo '<img class="thumb" data-bw="' . $thumbnail[0] . '" src="' . $thumbnail[0] . '" alt="'. $altText .'"/>'; ?>
+                        	<?php echo '<img class="thumb" data-bw="' . $image.$thumbnail[0] . '" src="' . $image.$thumbnail[0] . '" alt="'. $altText .'"/>'; ?>
                         </a>
                     	<?php } else { ?>
-                       	<?php echo '<img class="thumb" data-bw="' . $thumbnail[0] . '" src="' . $thumbnail[0] . '" alt="'. $altText .'"/>'; ?>
+                       	<?php echo '<img class="thumb" data-bw="' . $image.$thumbnail[0] . '" src="' . $image.$thumbnail[0] . '" alt="'. $altText .'"/>'; ?>
                     	<?php } ?>
                     <?php endif; ?>
                     <div style="margin-top:16px"></div>
@@ -255,7 +267,7 @@ class Scroller_Widget extends WP_Widget
                         <h2><?php echo $post->post_title; ?></h2>
                         <?php } ?>
                     <?php endif; ?>
-                    <p><?php echo $post->post_content; ?></p>
+                    <p><?php echo $sumary; ?></p>
                     <?php if($readmore == 'yes') : ?>
                     <a class="buttonlight morebutton" href="<?php echo get_permalink($post->ID); ?>"><?php _e('Read more ...'); ?></a>
                     <?php endif; ?>
