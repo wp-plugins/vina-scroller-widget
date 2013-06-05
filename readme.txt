@@ -41,10 +41,6 @@ Useful links:
 - Forum: http://vinaforum.biz/commercial-plugins/138-wordpress-vina-scroller-widget.html
 - Download: http://vinathemes.biz/commercial-plugins/item/11-vina-scroller-widget.html
 
-Note:
-
-- Free version will include back link to website of the developer.
-
 == Installation ==
 
 This section describes how to install the plugin and get it working.
