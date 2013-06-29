@@ -37,7 +37,8 @@ Features:
 
 Useful links:
 
-- Live demo: http://plugins.vinademo.biz/vina-scroller-widget/
+- Live demo: http://themes.vinademo.biz/?template=business_plan
+- Plugin demo: http://plugins.vinademo.biz/vina-scroller-widget/
 - Forum: http://vinaforum.biz/commercial-plugins/138-wordpress-vina-scroller-widget.html
 - Download: http://vinathemes.biz/commercial-plugins/item/11-vina-scroller-widget.html
 
